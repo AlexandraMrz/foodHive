@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "916205425573",
+    "project_id": "foodhive-b6240",
+    "storage_bucket": "foodhive-b6240.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916205425573:android:74cabfc8eba95df32bce4c",
+        "android_client_info": {
+          "package_name": "com.example.foodhive"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA4R7m5e31DIsTZIBCgmLY5ySvWS-7c84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
