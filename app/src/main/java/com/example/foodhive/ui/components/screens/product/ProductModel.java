@@ -1,24 +1,19 @@
 package com.example.foodhive.ui.components.screens.product;
 
-import com.example.foodhive.ui.components.screens.product.ProductRepo;
-import com.google.firebase.firestore.FirebaseFirestore;
-
 public class ProductModel {
     private String id;
     private String name;
     private String category;
-    private long addDate;
-    private long expDate;
-    private int quantity;
-    private double weight;
+    private String addDate;
+    private String expDate;
+    private String quantity;
+    private String weight;
 
-    //no-arg constructor
-    public void Product(){
+    // Required no-arg constructor for Firestore
+    public ProductModel() {}
 
-    }
-    //parameterized constructor
-    public void Product(String id, String name, String category, long addDate, long expDate, int quantity, double weight)
-    {
+    // Full constructor
+    public ProductModel(String id, String name, String category, String addDate, String expDate, String quantity, String weight) {
         this.id = id;
         this.name = name;
         this.category = category;
@@ -27,47 +22,50 @@ public class ProductModel {
         this.quantity = quantity;
         this.weight = weight;
     }
-    //getters and setters
-    public String getId(){
+
+    // Getters
+    public String getId() {
         return id;
     }
-    public void setId(String id){
-        this.id = id;
-    }
-    public String getName(){
+    public String getName() {
         return name;
     }
-    public void setName(String name){
-        this.name = name;
-    }
-    public String getCategory(){
+    public String getCategory() {
         return category;
     }
-    public void setCategory(String category){
-        this.category = category;
-    }
-    public long getAddDate(){
+    public String getAddDate() {
         return addDate;
     }
-    public void setAddDate(long addDate){
-        this.addDate = addDate;
-    }
-    public long getExpDate(){
+    public String getExpDate() {
         return expDate;
     }
-    public void setExpDate(long expDate){
-        this.expDate = expDate;
-    }
-    public int getQuantity(){
+    public String getQuantity() {
         return quantity;
     }
-    public void setQuantity(int quantity){
-        this.quantity = quantity;
-    }
-    public double getWeight(){
+    public String getWeight() {
         return weight;
     }
-    public void setWeight(double weight){
+
+    // Setters
+    public void setId(String id) {
+        this.id = id;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setCategory(String category) {
+        this.category = category;
+    }
+    public void setAddDate(String addDate) {
+        this.addDate = addDate;
+    }
+    public void setExpDate(String expDate) {
+        this.expDate = expDate;
+    }
+    public void setQuantity(String quantity) {
+        this.quantity = quantity;
+    }
+    public void setWeight(String weight) {
         this.weight = weight;
     }
 }
